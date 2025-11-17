@@ -1,0 +1,39 @@
+main.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 1rem;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #121212;
+  color: #eee;
+}
+
+[role="group"] {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+[role="group"] button {
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: #f3f4f6;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+[role="group"] button:hover {
+  background-color: #e5e7eb;
+  transform: translateY(-2px);
+}
